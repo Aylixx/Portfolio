@@ -1,0 +1,101 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 7rem 7rem 3.5rem;
+    overflow: hidden;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100%; */
+    /* position: relative; */
+}
+
+.header__container h1 {
+    font-size: 7vw;
+    font-weight: 600;
+}
+
+.header__container h5 {
+    font-size: 0.8vw;
+    position: relative;
+}
+
+.header__container h4 {
+    font-size: 2vw;
+    position: relative;
+}
+
+.header__container h5::before {
+    content: '';
+    display: block;
+    width: 5.9vw;
+    height: 1px;
+    background: var(--color-primary);
+    position: absolute;
+    left: -135%;
+    top: 50%;
+}
+
+.header__container h5::after {
+    content: '';
+    display: block;
+    width: 5.9vw;
+    height: 1px;
+    background: var(--color-primary);
+    position: absolute;
+    right: -135%;
+    top: 50%;
+}
+
+
+
+/* ========== CTA BUTTONS ========== */
+
+.cta {
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+    margin-top: 7vw;
+}
+
+/* ============= IMAGE ============= */
+
+.me {
+    background: linear-gradient(to bottom right, rgb(255, 231, 180), 30%, transparent);
+    border-bottom: 1px solid var(--color-primary);
+    border-right: 1px solid var(--color-primary);
+    border-left: 1px solid var(--color-primary);
+    border-radius: 0 7vw 0 0;
+    width: clamp(22rem, 22vw, 30vw);
+    height: clamp(22rem, 22vw, 30vw);
+    object-fit: cover;
+    left: calc(50% - 11vw);
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ====== MEDIA QUERIES (MED) ====== */
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 68vh;
+    }
+}
+
+/* ====== MEDIA QUERIES (SM) ====== */
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100vh;
+    }
+
+    .socials {
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    padding: 2rem;
+}
+
+.container.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 76vw;
+}
+
+footer img {
+    width: 3vw;
+}
+
+footer ul {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.footer__list {
+    margin-left: 2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: var(--color-bg-variant);
+}

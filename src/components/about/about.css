@@ -1,0 +1,58 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 10%;
+}
+
+/* .about__me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+} */
+
+.about__me-image {
+    border-radius: 1.5vw;
+    overflow: hidden;
+}
+
+.about__education {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.about__education-card {
+    width: 22.5vw;
+    background: var(--color-bg-variant);
+    border-radius: 1.5vw;
+    padding: 1.5vw;
+    text-align: center;
+}
+
+.about__education-icon {
+    color: var(--color-primary);
+    font-size: 1.3vw;
+}
+
+.about__education-card h3 {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+}
+
+.about__education-card p {
+    font-size: 0.8vw;
+    font-weight: 300;
+    color: var(--color-light);
+}
+
+.about__info {
+    margin: 1.7vw 0 2.6vw;
+    color: var(--color-light);
+    font-size: 0.9vw;
+}
