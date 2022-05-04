@@ -17,8 +17,16 @@ header {
 }
 
 .header__container h1 {
+    font-family: bold Poppins, sans-serif;
     font-size: 7vw;
     font-weight: 600;
+}
+
+.header__title-gradient {
+    /* background: linear-gradient(to right, purple, orange); */
+    background: linear-gradient(60deg, var(--color-primary), rgb(255, 200, 97));
+    background-clip: text;
+    color: transparent;
 }
 
 .header__container h5 {
