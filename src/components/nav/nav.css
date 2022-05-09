@@ -4,8 +4,8 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.8rem;
-    padding: 1.7rem 0.7rem;
+    gap: 0.7vw;
+    padding: 1.6vw 0.6vw;
     z-index: 2;
     position: fixed;
     top: 35%;
@@ -15,10 +15,10 @@ nav {
 
 nav a {
     background: transparent;
-    padding: 0.8rem;
+    padding: 0.7vw;
     border-radius: 50%;
     display: flex;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 nav .active {
@@ -35,7 +35,7 @@ nav .active {
     gap: 0.8rem;
     position: fixed;
     left: 12vw;
-    top: 38%;
+    top: 39%;
 }
 
 .socials::before {
@@ -57,11 +57,24 @@ nav .active {
 @media screen and (max-width: 1024px) {
     nav {
         right: 7vw;
+        gap: 1.2vw;
+        top: 40%;
     }
 
     .socials {
         left: 7vw;
+        top: 41%;
     }
 }
 
 /*======= MEDIA QUERIES (SM) =======*/
+
+@media screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+}

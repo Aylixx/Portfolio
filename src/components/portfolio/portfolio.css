@@ -8,16 +8,17 @@
 .portfolio__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 1.5vw;
 }
 
 .portfolio__item {
     display: flex;
     flex-direction: column;
     background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
+    padding: 1.2vw;
+    border-radius: 1.5vw;
     border: 1px solid transparent;
+    font-size: 0.85vw;
     transition: var(--transition);
 }
 
@@ -26,22 +27,29 @@
 }
 
 .portfolio__item-image img {
-    border-radius: 1rem;
+    border-radius: 0.9vw;
 }
 
 .portfolio__item h3 {
     text-align: center;
-    margin: 1.2rem 0;
+    margin: 1.1vw 0;
 }
 
 .portfolio__item-description {
     text-align: left;
-    margin: 0 0 1rem 0;
+    font-size: 0.85vw;
+    margin: 0 0 1vw 0;
 }
 
 .portfolio__item p {
     text-align: left;
     font-weight: 300;
+}
+
+.portfolio__example {
+    font-size: 0.75vw;
+    font-weight: 300;
+    color: var(--color-light);
 }
 
 .portfolio__item-cta {
@@ -53,10 +61,96 @@
 }
 
 .note {
+    font-size: 0.85vw;
     color: var(--color-light);
     margin: 2rem 0;
     width: 50%;
     border: 2px dashed var(--color-bg-variant);
     border-radius: 1.5rem;
     padding: 1.3rem;
+}
+
+
+/*======= MEDIA QUERIES (MED) =======*/
+
+@media screen and (max-width: 1024px) {
+    #portfolio {
+        margin-top: 2rem;
+    }
+
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .portfolio__item {
+        padding: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .portfolio__item h3 {
+        margin: 1.2rem 0;
+    }
+
+    .portfolio__item-description {
+        text-align: left;
+        font-size: 0.9rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .portfolio__example {
+        font-size: 0.8rem;
+    }
+
+    .portfolio__item-cta {
+        text-align: center;
+    }
+
+    .note {
+        font-size: 0.8rem;
+        margin: 1rem 0 0 0;
+        width: 60%;
+    }
+}
+
+/*======= MEDIA QUERIES (SM) =======*/
+
+@media screen and (max-width: 600px) {
+    #portfolio {
+        margin-top: 2rem;
+    }
+
+    .portfolio__container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .portfolio__item {
+        padding: 2.5vw;
+        font-size: 0.7rem;
+    }
+
+    .portfolio__item h3 {
+        margin: 1rem 0;
+    }
+
+    .portfolio__item-description {
+        text-align: left;
+        font-size: 0.7rem;
+        margin: 0 0 1rem 0;
+    }
+
+    .portfolio__example {
+        font-size: 0.6rem;
+    }
+
+    .portfolio__item-cta {
+        text-align: center;
+    }
+
+    .note {
+        font-size: 0.7rem;
+        margin: 1rem 0 0 0;
+        width: 90%;
+    }
 }

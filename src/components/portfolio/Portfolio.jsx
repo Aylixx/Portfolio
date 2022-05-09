@@ -20,7 +20,7 @@ export default function Portfolio() {
                     </p>
                     <p><b>Frontend:</b> HTML, CSS, React</p>
                     <div className="portfolio__item-cta">
-                        <a href="" className='btn' target='_blank' rel='noreferrer'>GitHub</a>
+                        <a href="https://github.com/Aylixx/Portfolio" className='btn' target='_blank' rel='noreferrer'>GitHub</a>
                         <a href="" className='btn btn-primary' target='_blank' rel='noreferrer'>Live Site</a>
                     </div>
                 </article>
@@ -33,6 +33,10 @@ export default function Portfolio() {
                     <p className='portfolio__item-description'>
                         Web-app for searching 'Apex Legends' players and retrieving up to date stats. The design/style is meant to match the game aesthetic.
                     </p>
+                    <p className='portfolio__example'>
+                        *Example Search: Click the Xbox icon (left) and search for the user 'oakleighh'
+                    </p>
+                    <br />
                     <p><b>Frontend:</b> HTML, CSS, JavaScript</p>
                     <p><b>Backend:</b> Node.js, Express</p>
                     <p><b>View Engine:</b> EJS</p>

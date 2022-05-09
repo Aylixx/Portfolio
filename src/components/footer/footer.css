@@ -33,3 +33,27 @@ footer a {
 footer a:hover {
     color: var(--color-bg-variant);
 }
+
+/*======= MEDIA QUERIES (MED) =======*/
+
+@media screen and (max-width: 1024px) {
+    footer img {
+        width: 3rem;
+    }
+
+    footer ul {
+        font-size: 1rem;
+    }
+}
+
+/*======= MEDIA QUERIES (SM) =======*/
+
+@media screen and (max-width: 600px) {
+    footer img {
+        width: 2rem;
+    }
+
+    footer ul {
+        font-size: 0.85rem;
+    }
+}

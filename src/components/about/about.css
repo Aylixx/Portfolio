@@ -11,12 +11,6 @@
     gap: 10%;
 }
 
-/* .about__me {
-    width: 100%;
-    aspect-ratio: 1/1;
-    border-radius: 2rem;
-} */
-
 .about__me-image {
     border-radius: 1.5vw;
     overflow: hidden;
@@ -55,4 +49,105 @@
     margin: 1.7vw 0 2.6vw;
     color: var(--color-light);
     font-size: 0.9vw;
+}
+
+/* ====== MEDIA QUERIES (MED) ====== */
+
+@media screen and (max-width: 1024px) {
+    #about {
+        margin: 0;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__me-image {
+        margin: 0 5rem 2rem 5rem;
+    }
+
+    .about__education-card {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .about__education-icon {
+        color: var(--color-primary);
+        font-size: 1rem;
+    }
+
+    .about__education-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .about__education-card p {
+        font-size: 0.8rem;
+        font-weight: 300;
+        color: var(--color-light);
+    }
+
+    .about__info {
+        font-size: 1rem;
+    }
+}
+
+/*======= MEDIA QUERIES (SM) =======*/
+
+@media screen and (max-width: 600px) {
+    #about {
+        margin: 0;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__me-image {
+        margin: auto;
+    }
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__education {
+        margin-top: 1rem;
+    }
+
+    .about__education-card {
+        width: 100vw;
+        border-radius: 0;
+        padding: 1.5rem;
+    }
+
+    .about__education-icon {
+        font-size: 1rem;
+    }
+
+    .about__education-card h3 {
+        font-size: 1rem;
+        margin-bottom: 1vw;
+    }
+
+    .about__education-card p {
+        font-size: 0.8rem;
+    }
+
+    .about__info {
+        width: 90%;
+        margin: 1rem 0;
+        color: var(--color-light);
+        font-size: 1rem;
+    }
 }
