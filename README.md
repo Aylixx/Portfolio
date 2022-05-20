@@ -2,7 +2,7 @@
 
 My personal portfolio, built with react.
 
-coltonaylix.com
+[coltonaylix.com](https://coltonaylix.com/)
 
 <!-- ## Available Scripts
 
