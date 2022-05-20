@@ -2,6 +2,8 @@
 
 My personal portfolio, built with react.
 
+coltonaylix.com
+
 <!-- ## Available Scripts
 
 In the project directory, you can run:
