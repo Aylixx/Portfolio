@@ -10,7 +10,7 @@ export default function Header() {
                 <div className='header__title-gradient'>
                     <h1>Colton Aylix</h1>
                 </div>
-                <h4 className="text-light">Fullstack Developer</h4>
+                <h4 className="text-light">Developer</h4>
 
                 <CTA />
             </div>

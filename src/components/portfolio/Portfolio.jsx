@@ -48,7 +48,11 @@ export default function Portfolio() {
             </div>
             <div className="note">
                 <p>
-                    NOTE: <br /> Due to very recently completing university, I have not had time to complete all the projects I'd wish. I am currently working on more that utilize databases and payment systems for things such as eCommerce.
+                    <h3>Future Projects:</h3>
+                    - Messaging application with message ciphering <br />
+                    - eCommerce site with Stripe payment system <br />
+                    - Film database that allows users to search movies by title or actor <br />
+                    - Small social media site implementing databases for user creation and posts
                 </p>
             </div>
         </section>
